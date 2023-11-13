@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: border-box;
+}
+#galaxy{
+    height: 100vh;
+    width: 100vw;
+     background-image: url("https://c4.wallpaperflare.com/wallpaper/154/830/356/space-dark-wallpaper-preview.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#sun{
+    position: absolute;
+    top: 47%;
+    left: 48.5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; 
+    box-shadow:0 0 5px#fff700,0 0 5px#fff700,0 0 5px#fff700,0 0 5px#fff700;   
+    border: 3px solid #ffbb00;
+    background-image:radial-gradient(#ff2600,#ff4000,#eb621d,#f18b3d,#f8a144) ;
+}
+.ring1{
+    position: absolute;
+    animation: planrot 2s ;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 10px;  
+}
+.ring2{
+    position: absolute;
+    animation: planrot 3s ;
+    height: 230px;
+    width: 230px;
+    padding: 22px;
+    border-radius: 50%;
+}
+ .ring3{
+    position: absolute;
+    animation: planrot 4s ;
+    height: 300px;
+    width: 300px;
+    padding: 27px;
+    border-radius: 50%;
+}
+.ring4{
+    position: absolute;
+    animation: planrot 5s ;
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+    padding: 52px;
+}
+.ring5{
+    position: absolute;
+    animation: planrot 7s ;
+    height: 480px;
+    border-radius: 50%;
+    width: 480px;
+    padding: 40px;
+}
+.ring6{
+    position: absolute;
+    animation: planrot 9s ;
+    height: 550px;
+    border-radius: 50%;
+    width: 550px;
+    padding: 75px;
+}
+.ring7{
+    position: absolute;
+    animation: planrot 10s ;
+    height: 620px;
+    border-radius: 50%;
+    width: 620px;
+    padding: 102px;
+}
+.ring8{
+    position: absolute;
+    animation: planrot 15s ;
+    height: 700px;
+    border-radius: 50%;
+    width: 700px;
+    padding:128px;
+}
+
+.planets{
+    border: transparent;
+    border-radius: 51%;    
+}
+#p1{
+    height: 30px;
+    width: 30px;
+    background-image: url("https://i.natgeofe.com/n/c6f7cee9-cde6-44a2-a686-9a80f5bfc1e8/01_mercury_pia15190_orig.jpg");
+    background-size: cover;  
+}
+#p2{
+    height: 40px;
+    width: 40px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7rJ6mzR1rBBk0jm76yBcsOQVSxcXi8M5bww&usqp=CAU");
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+#p3{
+    height: 50px;
+    width: 50px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cb/The_Blue_Marble_%28remastered%29.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+#p4{
+    height: 40px;
+    width: 40px;
+    background-image: url("https://static.scientificamerican.com/sciam/cache/file/C454F5A6-536E-4C9F-AA6AF354BB85A85B.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+#p5{
+    height: 70px;
+    width: 70px;
+    background-image: url("https://stardate.org/sites/default/files/styles/medium/public/images/resources/jupiter1.jpg?itok=bY0eIqti");
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+#p6{
+    height: 55px;
+    width: 55px;
+    background-image: url("https://media.istockphoto.com/id/526037429/photo/illustration-of-a-strange-planet-in-space-fantasy-planet-somewhere.jpg?s=170667a&w=0&k=20&c=rBMm8Opyy4b5u-PVCgWolDmaLOCZr1Aoj5xsd5MsMXU=");
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+#p7{
+    height: 35px;
+    width: 35px;
+    background-image: url("https://images.ctfassets.net/cnu0m8re1exe/5kMBUaBzV7Iq03C7e1ZsTZ/215894a6a88e73580d2cfe5370a88af5/shutterstock_1666194169.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+#p8{
+    height: 30px;
+    width: 30px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg/640px-Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+@keyframes planrot{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.ring{
+    border: 1px solid rgb(255, 255, 255);   
+    animation-iteration-count:infinite ;
+    animation-timing-function: linear;
+}
